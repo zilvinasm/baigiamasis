@@ -5,7 +5,7 @@
   ));
   ?>
 
-<section class="team" id="team" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('<?php the_field('team_foto', 88) ?>');">
+<section class="team" id="team" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('<?php the_field('team_foto', 88) ?>'); background-size: cover;">
   <div class="container">
     <div class="title-fix-set">
       <h2><?php the_field('team_head_text', 88) ?></h2>
