@@ -7,7 +7,7 @@
 ?>
 <section class="clients-logo" id="clients-logo">
   <div class="container">
-    <ul class="container clients-logo-container">
+    <ul class="clients-logo-container">
 <!-- ciklos pradžia-->
       <?php
         if ($clientslogoQuery->have_posts ()):
