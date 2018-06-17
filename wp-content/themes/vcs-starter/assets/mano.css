@@ -603,7 +603,6 @@ ul.team-member-box {
 
 .contact-box li {
   width: 100%;
-  height: 650px;
 }
 .contact-set {
   height: 650px;
@@ -683,9 +682,13 @@ input[type=submit]:hover {
 }
 .footer-logo {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   height: 130px;
+}
+.part1, .part2 {
+  display: flex;
+  justify-content: space-around;
 }
 .footer-logo h3{
   font-family: 'Roboto Slab';
@@ -702,6 +705,7 @@ input[type=submit]:hover {
   font-style: normal;
   font-size: 14px;
   margin-left: 30px;
+  padding-top: 20px;
 }
 .footer-logo p {
   color: rgba(41,50,60,255);
@@ -709,10 +713,16 @@ input[type=submit]:hover {
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
-  margin-left: 540px;
+  padding-top: 10px;
+}
+.footer-logo-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 10px;
 }
 .footer-logo-nav li {
-  margin-left: 20px;
+  margin-left: 10px;
   list-style-type: none;
   font-size: 35px;
 }
@@ -734,13 +744,10 @@ input[type=submit]:hover {
   .images img {height: 160px;}
   .team-member-box li {margin: 0 2px;}
   .prs-div-text p{line-height: 2.2;}
-  .acf-map {height: 600px;}
-  .contact-box li {height: 600px}
-  .contact-set {padding-left: 140px; height: 600px}
+  .contact-set {padding-left: 140px;}
   .col-25 {width: 65px;}
   .col-75 {width: 250px;}
   .submit {margin-left: 195px;}
-  .footer-logo p {margin-left: 300px;}
 }
 
 @media all and ( max-width:991px ) {
@@ -766,17 +773,11 @@ input[type=submit]:hover {
   .clients-logo img{width: 120px;}
   .prs-div-text p{line-height: 2.2; padding: 0 10px;}
   .acf-map {height: 500px;}
-  .contact-box li {height: 500px}
   .contact-set {padding-left: 50px; height: 500px;padding-top: 5px;}
   .col-25 {width: 65px;}
   .col-75 {width: 200px;}
   .submit {margin-left: 145px;}
-  .footer-logo {justify-content: space-around;}
-  .footer-logo > div{width: 200px;}
-  .footer-logo h3{font-size: 30px;margin-left: 10px;text-align: right;}
-  .footer-logo h2{width: 300px;font-size: 12px;margin-left: 10px;text-align: left;}
-  .footer-logo p{font-size: 12px; margin-left: 10px; text-align: right;}
-  .footer-logo-nav li {font-size: 25px;}
+  .footer-logo h2{margin-left:10px;}
 
 @media all and ( max-width: 669px ) {
   .logo p{padding-top: 10px;}
@@ -806,20 +807,15 @@ input[type=submit]:hover {
   .team-member-box li {width: 35%; margin: 2px 2px;}
   .hover-on-team-member img{width: 100%}
   .member-contact-list li {font-size: 10px; text-align: center;}
-  .member-contact-list li a {font-size: 10px; }
   .prs-div-head h2 {font-size: 15px;}
   .prs-div-text p{line-height: 1.3; padding: 0 10px;}
   .acf-map {height: 400px;}
-  .contact-box li {height: 400px}
-  .contact-set {padding-left: 20px; height: 400px;padding-top: 5px;}
-  .col-25 {width: 65px; height: 30px;}
-  .col-75 {width: 130px;height: 30px;}
-  .submit {margin-left: 75px;}
-  input[type=submit] {margin-top: 10px;}
-  .footer-logo h3{font-size: 15px;margin-left: 5px;}
-  .footer-logo h2{width: 150px;font-size: 10px;margin-left: 5px;}
-  .footer-logo p{font-size: 10px;}
-  .footer-logo-nav li {font-size: 15px;}
+  .contact-box {flex-direction: column;}
+  .contact-set {height: 400px;padding-top: 5px;}
+  .col-25, .col-75, input[type=submit]{margin-top: 10px;}
+  .footer-logo h3{margin-left: 0;}
+  .footer-logo h2{margin-left:5px;}
+  .footer-logo{flex-direction: column;}
 }
 
 @media all and ( max-width: 481px ) {
@@ -839,7 +835,6 @@ input[type=submit]:hover {
   .title-fix-set h2 {padding-top: 15px;}
   .member-hover h5{padding-top: 100px;}
   ul.services-flexbox {margin-top: 5px; flex-wrap: wrap;}
-  .services-flexbox li{wide th: 50%;}
   .services-flexbox h3 {margin-top: 5px;font-size: 13px;}
   .services-flexbox p {margin-top: 10px;font-size: 13px;}
   .icon-picture i{width: 40px; padding-top: 10px;font-size:20px;}
@@ -854,25 +849,10 @@ input[type=submit]:hover {
   .team-member-box h3{padding-top: 10px;font-size: 15px}
   .team-member-box p{padding-top: 10px;font-size: 15px}
   .member-contact-list li {font-size: 10px; text-align: center;}
-  .member-contact-list li a {font-size: 16px; }
   .price-list-container {margin: 45px 5px 0px 5px;}
   .prs-div-head h2 {font-size: 10px;}
   .prs-div-head h5 {font-size: 25px;}
   .prs-div-head h6 {font-size: 12px;}
   .prs-div-text p{line-height: 1; padding: 0 5px;}
   .order-btn {padding: 10px 15px; margin-top: 15px; font-size: 12px;}
-  .acf-map {height: 400px;}
-  .contact-box li {height: 400px}
-  .contact-set {padding-left: 20px; height: 400px;padding-top: 5px;}
-  .footer {height: 50px;}
-  .footer-logo > div{width: 100px;}
-  label {padding: 10px 10px 10px 0; font-size: 10px;}
-  .col-25 {width: 45px; height: 15px;}
-  .col-75 {width: 90px;height: 15px;}
-  .submit {margin-left: 75px;}
-  input[type=submit] {margin-top: 5px;font-size: 10px;width: 60px;}
-  .footer .footer-logo {height: 50px;}
-  .footer-logo h3{font-size: 10px;margin-left: 2px;}
-  .footer-logo h2{width: 150px;font-size: 7px;margin-left: 2px;}
-  .footer-logo p{font-size: 7px;}
-  .footer-logo-nav li {font-size: 10px;}
+  .footer-logo h2{font-size: 11px;}
