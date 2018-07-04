@@ -50,7 +50,10 @@ header {
   margin: 0;
   padding: 0;
 }
-.dropdown ul li:hover ul {display: block;}
+.dropdown ul li:hover ul {
+  display: block;
+  right:-5px;
+}
 .dropdown ul li ul {
   position: absolute;
   width: 110px;
@@ -734,12 +737,10 @@ input[type=submit]:hover {
 
 /*media formatai*/
 @media all and ( max-width:1601px ) {
-  .dropdown {padding-right: 26px;}
 }
 
 @media all and ( max-width:1281px ) {
   .logo p {padding-left: 30px;}
-  .dropdown {padding-right: 50px;}
   .icon {width: 200px;margin: 0 10px;}
   .images img {height: 160px;}
   .team-member-box li {margin: 0 2px;}
@@ -821,7 +822,6 @@ input[type=submit]:hover {
 @media all and ( max-width: 481px ) {
   .logo p{padding-top: 10px; font-size: 25px}
   .logo-nav{padding-top: 15px;}
-  .dropdown{padding-right: 40px;}
   .dropdown ul li ul li a {padding: 6px;font-size: 11px;}
   .dropdown ul li ul {width: 90px;}
   .title {margin-top: 175px;}
